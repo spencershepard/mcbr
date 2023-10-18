@@ -9,6 +9,7 @@ services:
       GAMEMODE: creative
       DIFFICULTY: normal
       LEVEL_NAME: "Harrison's World"
+      CHAT_RESTRICTION: Disabled
 
     ports:
       - 19132:19132/udp
