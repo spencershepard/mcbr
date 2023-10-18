@@ -8,7 +8,6 @@ services:
       EULA: "TRUE"
       GAMEMODE: creative
       DIFFICULTY: normal
-      LEVEL_TYPE: amplified
       LEVEL_NAME: "Harrison's World"
 
     ports:
