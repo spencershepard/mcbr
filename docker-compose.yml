@@ -4,12 +4,13 @@ services:
   bds:
     image: itzg/minecraft-bedrock-server
     environment:
-      SERVER_NAME: "Harrison's Server"
+      SERVER_NAME: "Bacon's Server"
       EULA: "TRUE"
-      GAMEMODE: creative
+      GAMEMODE: survival
       DIFFICULTY: normal
-      LEVEL_NAME: "Harrison's World"
+      LEVEL_NAME: "Bacon's World"
       CHAT_RESTRICTION: Disabled
+      ALLOW_CHEATS: "true"
 
     ports:
       - 19132:19132/udp
