@@ -11,4 +11,13 @@ fi
 
 cp mcbs/worlds/$level_name/server.properties mcbs/server.properties
 
+#if not successful, exit
+if [ $? -ne 0 ]
+then
+    echo "Error copying server.properties file."
+    exit 1
+fi
+
 echo "$level_name server.properties file copied to main directory. Please restart server to activate level."
+
+exit 0
