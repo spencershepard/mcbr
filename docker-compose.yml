@@ -5,10 +5,7 @@ services:
     image: itzg/minecraft-bedrock-server
     environment:
       TZ: "America/Vancouver"
-      SERVER_NAME: "Bacon's Server"
       EULA: "TRUE"
-      GAMEMODE: survival
-      DIFFICULTY: normal
       
     ports:
       - 19132:19132/udp
@@ -16,6 +13,3 @@ services:
       - ./mcbs:/data
     stdin_open: true
     tty: true
-
-volumes:
-  minecraft-server: {}
