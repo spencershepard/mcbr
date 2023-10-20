@@ -11,7 +11,7 @@ then
             echo "Updating packs for $level"
             cp world_resource_packs.json "$level"
             cp -r behavior_packs "$level/behavior_packs"
-            cp -r resource_packs "$level"/resource_packs"
+            cp -r resource_packs "$level/resource_packs"
         fi
     done
 else
