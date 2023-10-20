@@ -51,11 +51,11 @@ cp server.properties mcbs/worlds/$level_name
 
 #modify the server.properties file
 
-#temporarily replace "force-gamemode=" with "frcgmmode=" to avoid sed confusing with "gamemode="
-sed -i "s/force-gamemode=.*/frcgmmode=/g" mcbs/worlds/$level_name/server.properties
+#temporarily replace "force-gamemode=" with "frcgmmode=" to avoid sed confusing with "gamemode=" KEEP the value after the "="
+sed -i "s/force-gamemode=/frcgmmode=/g" mcbs/worlds/$level_name/server.properties
 sed -i "s/gamemode=.*/gamemode=$game_mode/g" mcbs/worlds/$level_name/server.properties
 #change back
-sed -i "s/frcgmmode=.*/force-gamemode=/g" mcbs/worlds/$level_name/server.properties
+sed -i "s/frcgmmode=/force-gamemode=/g" mcbs/worlds/$level_name/server.properties
 
 #continue normally with othe properties
 sed -i "s/level-name=.*/level-name=$level_name/g" mcbs/worlds/$level_name/server.properties
@@ -72,6 +72,17 @@ then
     sed -i "s/allow-cheats=.*/allow-cheats=true/g" mcbs/worlds/$level_name/server.properties
 fi
 
-echo "Level created. Please restart server to activate level."
+echo "Level created. Would you like to activate it? (y/n)"
+read activate_level
+
+if [ "$activate_level" = "y" ]
+then
+    cp mcbs/worlds/$level_name/server.properties mcbs/server.properties
+    echo "Level activated. Please restart server."
+else
+    echo "Level created. Activate it with activate_world.sh."
+fi
+
+exit 0
 
 
