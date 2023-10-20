@@ -4,18 +4,16 @@ services:
   bds:
     image: itzg/minecraft-bedrock-server
     environment:
+      TZ: "America/Vancouver"
       SERVER_NAME: "Bacon's Server"
       EULA: "TRUE"
       GAMEMODE: survival
       DIFFICULTY: normal
-      LEVEL_NAME: "Bacon's World"
-      CHAT_RESTRICTION: Disabled
-      ALLOW_CHEATS: "true"
-
+      
     ports:
       - 19132:19132/udp
     volumes:
-      - minecraft-server:/data
+      - ./mcbs:/data
     stdin_open: true
     tty: true
 
