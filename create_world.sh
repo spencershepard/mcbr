@@ -1,4 +1,10 @@
-!/bin/bash
+!/bin/sh
+
+#check for sudo
+if [ "$EUID" -ne 0 ]
+  then echo "Please run as root"
+  exit
+fi
 
 #User input: level name
 echo "Enter level name: "
