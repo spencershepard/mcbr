@@ -1,12 +1,3 @@
-!/bin/sh
-
-#check for sudo
-if [ "$EUID" -ne 0 ]
-  then echo "Please run as root"
-  exit
-fi
-
-#User input: level name
 echo "Enter level name: "
 read level_name
 
@@ -14,6 +5,15 @@ read level_name
 if [ -d "mcbs/worlds/$level_name" ]
 then
     echo "Level name already in use. Please choose another."
+    exit 1
+fi
+
+mkdir mcbs/worlds/$level_name
+
+#if not successful, exit
+if [ $? -ne 0 ]
+then
+    echo "Error creating level directory."
     exit 1
 fi
 
@@ -29,14 +29,11 @@ read difficulty
 echo "Allow cheats? (y/n)"
 read allow_cheats
 
-#Create level directory
-mkdir mcbs/worlds/$level_name
-
 echo "Use repository packs? (y/n)"
 read use_repo_packs
 
 
-if [ $use_repo_packs == "y" ]
+if [ $use_repo_packs = "y"]
 then
     cp world_resource_packs.json mcbs/worlds/$level_name
     cp -r behavior_packs mcbs/worlds/$level_name/behavior_packs
