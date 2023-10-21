@@ -1,0 +1,18 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "@Aspirin60 - port @kartograf",
+        "name": "Beautiful beds",
+        "uuid": "6aa869a3-b7d2-4707-bf78-3694f4cbc9e2",
+        "version": [0, 0, 1],
+        "min_engine_version": [ 1, 20, 10 ]
+    },
+    "modules": [
+        {
+            "description": "@Aspirin60 - port @kartograf",
+            "type": "resources",
+            "uuid": "f102e71f-00ae-4cad-bef2-b13b30522d44",
+            "version": [0, 0, 1]
+        }
+    ]
+}

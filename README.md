@@ -1,11 +1,11 @@
 # Minecraft Bedrock Server
 
-A containterized server with scripts for creating and switching between worlds, and updating worlds with behaviour and resouce packs. 
+A containterized server with scripts for creating and switching between worlds, and updating worlds with behaviour and resouce packs.
 
-## Setup 
+## Setup
 
 1) Clone this repo onto host.
-2) docker compose up
+2) `docker compose up``
 
 ** server.properties are defaults that are overwritten by new world creation **
 
@@ -14,12 +14,19 @@ A containterized server with scripts for creating and switching between worlds, 
 Navigate to the repository directory on your host and:
 
 `sh create_world.sh`
-(may require sudo)
 
 ### Swap between persistant worlds
 
 `sh activate_world.sh`
 
-### Update worlds with packs from repository
+## Adding New Packs
 
-`sh update_packs.sh`
+1) Add files to behavior_packs or resource_packs
+
+2) Run `.\update_packs.ps1` (powershell) to update valid_known_packs.json and world_resource_packs.json
+
+3) Push to repo
+
+4) Pull to your host
+
+5) On your host run `sh update_world.sh` to copy the new files to your world folders
