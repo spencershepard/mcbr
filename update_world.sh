@@ -10,12 +10,12 @@ then
         then
             echo "Updating packs for $level"
             cp world_resource_packs.json "$level"
-            cp -r behavior_packs "$level/behavior_packs"
-            cp -r resource_packs "$level/resource_packs"
+            cp -a behavior_packs/. "$level/behavior_packs"
+            cp -a resource_packs/. "$level/resource_packs"
         fi
     done
 else
     cp world_resource_packs.json "mcbs/worlds/$level_name"
-    cp -r behavior_packs "mcbs/worlds/$level_name/behavior_packs"
-    cp -r resource_packs "mcbs/worlds/$level_name/resource_packs"
+    cp -a behavior_packs/. "mcbs/worlds/$level_name/behavior_packs"
+    cp -a resource_packs/. "mcbs/worlds/$level_name/resource_packs"
 fi
