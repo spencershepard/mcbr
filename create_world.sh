@@ -32,20 +32,8 @@ read difficulty
 echo "Allow cheats? (y/n)"
 read allow_cheats
 
-echo "Use repository packs? (y/n)"
-read use_repo_packs
-
 echo "Enter server name (leave blank for default): "
 read server_name
-
-
-if [ "$use_repo_packs" = "y" ]
-then
-    cp world_resource_packs.json mcbs/worlds/$level_name
-    cp -r behavior_packs mcbs/worlds/$level_name/behavior_packs
-    cp -r resource_packs mcbs/worlds/$level_name/resource_packs
-fi
-
 
 cp server.properties mcbs/worlds/$level_name
 
