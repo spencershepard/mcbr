@@ -1,0 +1,30 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Bacon Pack",
+		"description": "Bacon Pack Behavior Pack",
+		"uuid": "5d01609d-af84-73b3-3e04-3e815bd19b01",
+		"version": [1, 0, 1],
+		"min_engine_version": [1, 19, 0]
+	},
+	"metadata": {
+		"authors": ["Shepards"],
+		"generated_with": {
+			"blockbench_item_wizard": ["1.0.2"]
+		}
+	},
+	"modules": [
+		{
+			"description": "Behavior",
+			"version": [1, 0, 0],
+			"uuid": "03f27c33-f07d-3b69-fda4-087483f5ba28",
+			"type": "data"
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "78d7c7ed-773e-08ab-a980-55f37aa19589",
+			"version": [1, 0, 1]
+		}
+	]
+}
