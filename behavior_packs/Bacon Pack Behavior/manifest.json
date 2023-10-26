@@ -4,7 +4,7 @@
 		"name": "Bacon Pack",
 		"description": "Bacon Pack Behavior Pack",
 		"uuid": "5d01609d-af84-73b3-3e04-3e815bd19b01",
-		"version": [1, 0, 1],
+		"version": [1, 0, 2],
 		"min_engine_version": [1, 19, 0]
 	},
 	"metadata": {
@@ -24,7 +24,7 @@
 	"dependencies": [
 		{
 			"uuid": "78d7c7ed-773e-08ab-a980-55f37aa19589",
-			"version": [1, 0, 1]
+			"version": [1, 0, 2]
 		}
 	]
 }
