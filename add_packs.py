@@ -15,6 +15,7 @@ class Pack:
         self.path = path
         self.type = type
         self.abs_path = os.path.abspath(path)
+        self.folder_name = os.path.basename(self.abs_path)
         self.manifest = self.get_manifest()
         self.uuid = self.manifest['header']['uuid']
         self.name = self.manifest['header']['name']
@@ -56,9 +57,9 @@ for pack in resource_packs:
 
     # copy the pack to the mcbs folder
     if windows:
-        os.system(f'xcopy "{pack.path}" "mcbs/resource_packs/{pack.name}" /E /I /Y')
+        os.system(f'xcopy "{pack.path}" "mcbs/resource_packs/{pack.folder_name}" /E /I /Y')
     else:
-        os.system(f'cp -r "{pack.path}" "mcbs/resource_packs/{pack.name}"')
+        os.system(f'cp -r "{pack.path}" "mcbs/resource_packs/{pack.folder_name}"')
 
 for pack in behavior_packs:
     validPacks.append({
@@ -70,9 +71,9 @@ for pack in behavior_packs:
 
     # copy the pack to the mcbs folder
     if windows:
-        os.system(f'xcopy "{pack.path}" "mcbs/behavior_packs/{pack.name}" /E /I /Y')
+        os.system(f'xcopy "{pack.path}" "mcbs/behavior_packs/{pack.folder_name}" /E /I /Y')
     else:
-        os.system(f'cp -r "{pack.path}" "mcbs/behavior_packs/{pack.name}"')
+        os.system(f'cp -r "{pack.path}" "mcbs/behavior_packs/{pack.folder_name}"')
 
 # Save the valid_known_packs.json in utf-8
 with open('mcbs/valid_known_packs.json', 'w', encoding='utf-8') as valid_packs_file:
