@@ -7,7 +7,7 @@ A containterized server with scripts for creating and switching between worlds, 
 1) Clone this repo onto host.
 2) `docker compose up``
 
-** server.properties are defaults that are overwritten by new world creation **
+** server.properties are defaults that are used/overwritten by new world creation **
 
 ### Create New World
 
@@ -21,12 +21,10 @@ Navigate to the repository directory on your host and:
 
 ## Adding New Packs
 
-1) Add files to behavior_packs or resource_packs
+1) Add files to behavior_packs or resource_packs (mcbr repository directory)
 
-2) Run `.\update_packs.ps1` (powershell) to update valid_known_packs.json and world_resource_packs.json
+2) Push to repo
 
-3) Push to repo
+3) Pull to your host
 
-4) Pull to your host
-
-5) On your host run `sh update_world.sh` to copy the new files to your world folders
+4) Run `python add_packs.py` to update valid_known_packs.json and world_resource_packs.json

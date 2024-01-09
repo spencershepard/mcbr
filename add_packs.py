@@ -32,11 +32,13 @@ resource_packs = []
 resource_manifests = [os.path.join(root, file) for root, dirs, files in os.walk('resource_packs') for file in files if file == 'manifest.json']
 for manifest_path in resource_manifests:
     resource_packs.append(Pack(os.path.dirname(manifest_path), 'resource'))
+    print(f"Found resource pack: {os.path.dirname(manifest_path)}")
 
 behavior_packs = []
 behavior_manifests = [os.path.join(root, file) for root, dirs, files in os.walk('behavior_packs') for file in files if file == 'manifest.json']
 for manifest_path in behavior_manifests:
     behavior_packs.append(Pack(os.path.dirname(manifest_path), 'behavior'))
+    print(f"Found behavior pack: {os.path.dirname(manifest_path)}")
 
 
 input("Add all packs to valid_known_packs.json? (press enter to continue) ")
