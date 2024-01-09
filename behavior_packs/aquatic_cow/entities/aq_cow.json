@@ -109,7 +109,7 @@
       "minecraft:breathable": {
         "generates_bubbles": true,
         "total_supply": 220,
-        "suffocate_time": 220,
+        "suffocate_time": 0,
         "breathes_air": false,
         "breathes_water": true
       },
@@ -121,7 +121,7 @@
       },
       "minecraft:navigation.generic": { // Allows the mob to go through water
         "is_amphibious": false,
-        "can_path_over_water": false,
+        "can_path_over_water": true,
         "can_swim": true,
         "can_walk": true,
         "can_breach": true,
