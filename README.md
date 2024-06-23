@@ -1,11 +1,12 @@
 # Minecraft Bedrock Server
 
-A containterized server with scripts for creating and switching between worlds, and updating worlds with behaviour and resouce packs.
+A containterized server with interactive scripts for creating and switching between worlds, and updating worlds with behaviour and resouce packs.  This utilizes https://github.com/itzg/docker-minecraft-bedrock-server as the dockerized server.
 
 ## Setup
 
-1) Clone this repo onto host.
-2) `docker compose up``
+1) Clone this repo onto host. `sudo git clone https://github.com/spencershepard/mcbr.git`
+2) `cd mcbr`
+2) `sudo docker compose up`
 
 ** server.properties are defaults that are used/overwritten by new world creation **
 

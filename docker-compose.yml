@@ -6,10 +6,10 @@ services:
     environment:
       TZ: "America/Vancouver"
       EULA: "TRUE"
-      
     ports:
       - 19132:19132/udp
     volumes:
       - ./mcbs:/data
     stdin_open: true
     tty: true
+    #user: "1000:1000"  # running as non-root user will require chown -R 1000:1000 mcbs on host
