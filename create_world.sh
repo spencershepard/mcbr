@@ -1,4 +1,4 @@
-#linux shell script 
+#!/bin/bash
 #creates a new world directory and copies server.properties to it
 
 echo "Enter level name: "

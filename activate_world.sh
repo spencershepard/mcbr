@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "Choose level to activate: "
 ls mcbs/worlds
 read level_name
