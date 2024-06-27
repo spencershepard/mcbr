@@ -1,0 +1,73 @@
+{
+	"format_version": "1.18.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "pan:frostbite_area",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"pan:despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:physics": {
+				"has_collision": false,
+				"has_gravity": false
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:timer": {
+				"time": [
+					9,
+					9
+				],
+				"time_down_event": {
+					"event": "pan:despawn",
+					"target": "self"
+				}
+			},
+			"minecraft:environment_sensor": {
+				"triggers": {
+					"event": "pan:summon",
+					"target": "self"
+				}
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:type_family": {
+				"family": [
+					"inanimate"
+				]
+			}
+		},
+		"events": {
+			"pan:despawn": {
+				"add": {
+					"component_groups": [
+						"pan:despawn"
+					]
+				}
+			},
+			"pan:summon": {
+				"run_command": {
+					"command": [
+						"scoreboard players set @e[type=!item,type=!xp_orb,r=3,type=!pan:frostbite_area,type=!pan:frostbite_projectile] pan:frostbite2 200",
+						"particle minecraft:snowflake_particle ~-0.5 ~ ~"
+					]
+				}
+			}
+		}
+	}
+}

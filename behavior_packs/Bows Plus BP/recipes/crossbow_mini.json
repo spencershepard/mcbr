@@ -1,0 +1,39 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "pan:crossbow_mini"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ABA",
+			"CDC",
+			" A "
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:iron_ingot"
+			},
+			"B": {
+				"item": "minecraft:iron_block"
+			},
+			"C": {
+				"item": "minecraft:string"
+			},
+			"D": {
+				"item": "minecraft:tripwire_hook"
+			}
+		},
+		"result": {
+			"item": "pan:crossbow_mini_empty",
+			"count": 1
+		},
+		"unlock": [
+			{
+				"item": "minecraft:string"
+			}
+		]
+	}
+}

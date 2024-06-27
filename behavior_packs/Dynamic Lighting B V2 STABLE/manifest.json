@@ -1,0 +1,26 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Made By: Dewdimpple/Amon28
+		Twitter: @dewdimpple
+		Youtube: Dewdimpple",
+        "name": "Dynamic Lighting B V2 STABLE",
+        "uuid": "d9675696-e757-41d2-9918-82aae6803931",
+        "version": [ 4,4,1 ],
+        "min_engine_version": [ 1, 21, 0 ]
+    },
+    "modules": [
+        {
+            "description": "Example vanilla behavior pack",
+            "type": "data",
+            "uuid": "fa6e90c8-c925-460f-8155-c8a60b753caa",
+            "version": [4,4,1]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "52fcc093-24bd-405f-af15-9a7229c9c2d1",
+            "version": [4,2,1]
+        }
+    ]
+}

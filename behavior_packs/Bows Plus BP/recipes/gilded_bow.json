@@ -1,0 +1,42 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "pan:gilded_bow"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ABA",
+			"CDC",
+			" E "
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:gold_block"
+			},
+			"B": {
+				"item": "minecraft:iron_block"
+			},
+			"C": {
+				"item": "minecraft:string"
+			},
+			"D": {
+				"item": "minecraft:tripwire_hook"
+			},
+			"E": {
+				"item": "minecraft:gilded_blackstone"
+			}
+		},
+		"result": {
+			"item": "pan:gilded_bow_empty",
+			"count": 1
+		},
+		"unlock": [
+			{
+				"item": "minecraft:string"
+			}
+		]
+	}
+}

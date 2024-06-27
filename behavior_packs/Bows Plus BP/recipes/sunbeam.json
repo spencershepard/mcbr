@@ -1,0 +1,42 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "pan:sunbeam"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ABA",
+			"CDC",
+			" E "
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:netherite_ingot"
+			},
+			"B": {
+				"item": "minecraft:netherite_block"
+			},
+			"C": {
+				"item": "minecraft:string"
+			},
+			"D": {
+				"item": "minecraft:tripwire_hook"
+			},
+			"E": {
+				"item": "minecraft:magma"
+			}
+		},
+		"result": {
+			"item": "pan:sunbeam_empty",
+			"count": 1
+		},
+		"unlock": [
+			{
+				"item": "minecraft:string"
+			}
+		]
+	}
+}

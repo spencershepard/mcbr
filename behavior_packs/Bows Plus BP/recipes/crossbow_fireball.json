@@ -1,0 +1,24 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "pan:crossbow_fireball"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:fire_charge",
+				"count": 1
+			},
+			{
+				"item": "minecraft:crossbow",
+				"count": 1
+			}
+		],
+		"result": {
+			"item": "pan:crossbow_fireball"
+		}
+	}
+}

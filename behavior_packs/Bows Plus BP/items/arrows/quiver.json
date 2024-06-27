@@ -1,0 +1,168 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "pan:quiver",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "items"
+			},
+			"minecraft:display_name": {
+				"value": "Quiver\n§7Change arrow type\n§7Holds arrows§f"
+			},
+			"minecraft:icon": {
+				"texture": "quiver"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "pan:switch",
+					"target": "self"
+				}
+			},
+			"minecraft:cooldown": {
+				"category": "quiver",
+				"duration": 0.5
+			},
+			"minecraft:hand_equipped": true,
+			"minecraft:allow_off_hand": true,
+			"minecraft:durability": {
+				"max_durability": 200
+			},
+			"minecraft:enchantable": {
+				"slot": "flintsteel",
+				"value": 20
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"minecraft:leather"
+						],
+						"repair_amount": 200
+					}
+				]
+			}
+		},
+		"events": {
+			"pan:switch": {
+				"sequence": [
+					{
+						"condition": "query.is_sneaking==false&&query.get_equipped_item_name('off_hand')!='xbow_empty'&&query.get_equipped_item_name('off_hand')!='crossbow_mini_empty'&&query.get_equipped_item_name('off_hand')!='bone_bow_empty'&&query.get_equipped_item_name('off_hand')!='gilded_bow_empty'&&query.get_equipped_item_name('off_hand')!='iron_crossbow_empty'",
+						"sequence": [
+							{
+								"condition": "query.scoreboard('pan:quiver')==0",
+								"run_command": {
+									"command": [
+										"playsound armor.equip_leather @a[r=10] ~ ~ ~",
+										"title @s actionbar Put empty crossbow in offhand to change arrow type"
+									],
+									"target": "holder"
+								}
+							},
+							{
+								"condition": "query.scoreboard('pan:quiver')!=0",
+								"run_command": {
+									"command": [
+										"function quiver_give"
+									],
+									"target": "holder"
+								},
+								"damage": {
+									"type": "durability",
+									"amount": 1,
+									"target": "self"
+								}
+							}
+						]
+					},
+					{
+						"condition": "query.is_sneaking==true",
+						"sequence": [
+							{
+								"condition": "query.scoreboard('pan:quiver')==0",
+								"run_command": {
+									"command": [
+										"function quiver_hold"
+									],
+									"target": "holder"
+								}
+							},
+							{
+								"condition": "query.scoreboard('pan:quiver')!=0",
+								"run_command": {
+									"command": [
+										"function quiver_give"
+									],
+									"target": "holder"
+								},
+								"damage": {
+									"type": "durability",
+									"amount": 1,
+									"target": "self"
+								}
+							}
+						]
+					},
+					{
+						"condition": "query.is_sneaking==false&&query.get_equipped_item_name('off_hand')=='xbow_empty'",
+						"run_command": {
+							"command": [
+								"playsound mob.horse.leather @a[r=10] ~ ~ ~",
+								"scoreboard players add @s pan:xbarrow 1",
+								"function xbow_arrow_change"
+							],
+							"target": "holder"
+						}
+					},
+					{
+						"condition": "query.is_sneaking==false&&query.get_equipped_item_name('off_hand')=='crossbow_mini_empty'",
+						"run_command": {
+							"command": [
+								"playsound mob.horse.leather @a[r=10] ~ ~ ~",
+								"scoreboard players add @s pan:miniarrow 1",
+								"function crossbow_mini_arrow_change"
+							],
+							"target": "holder"
+						}
+					},
+					{
+						"condition": "query.is_sneaking==false&&query.get_equipped_item_name('off_hand')=='bone_bow_empty'",
+						"run_command": {
+							"command": [
+								"playsound mob.horse.leather @a[r=10] ~ ~ ~",
+								"scoreboard players add @s pan:bonearrow 1",
+								"function bone_bow_arrow_change"
+							],
+							"target": "holder"
+						}
+					},
+					{
+						"condition": "query.is_sneaking==false&&query.get_equipped_item_name('off_hand')=='gilded_bow_empty'",
+						"run_command": {
+							"command": [
+								"playsound mob.horse.leather @a[r=10] ~ ~ ~",
+								"scoreboard players add @s pan:gildarrow 1",
+								"function gilded_bow_arrow_change"
+							],
+							"target": "holder"
+						}
+					},
+					{
+						"condition": "query.is_sneaking==false&&query.get_equipped_item_name('off_hand')=='iron_crossbow_empty'",
+						"run_command": {
+							"command": [
+								"playsound mob.horse.leather @a[r=10] ~ ~ ~",
+								"scoreboard players add @s pan:ironarrow 1",
+								"function iron_crossbow_arrow_change"
+							],
+							"target": "holder"
+						}
+					}
+				]
+			}
+		}
+	}
+}

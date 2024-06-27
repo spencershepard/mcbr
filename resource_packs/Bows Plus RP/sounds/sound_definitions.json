@@ -1,0 +1,12 @@
+{
+	"format_version": "1.17.0",
+	"sound_definitions": {
+		"pan.hook": {
+			"category": "player",
+			"sounds": [
+				"sounds/bows_plus/hook"
+			],
+			"max_distance": 15
+		}
+	}
+}

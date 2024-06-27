@@ -1,0 +1,31 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "pan:magma_arrow",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.arrow"
+			},
+			"minecraft:display_name": {
+				"value": "Magma Arrow\n§710-13 Damage§f"
+			},
+			"minecraft:icon": {
+				"texture": "magma_arrow"
+			},
+			"minecraft:allow_off_hand": true,
+			"minecraft:entity_placer": {
+				"entity": "pan:magma_arrow",
+				"use_on": [
+					"minecraft:barrier"
+				],
+				"dispense_on": [
+					"minecraft:air"
+				]
+			}
+		},
+		"events": {}
+	}
+}

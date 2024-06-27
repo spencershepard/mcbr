@@ -1,0 +1,18 @@
+{
+	"format_version": [
+		1,
+		1,
+		0
+	],
+	"pan:fletching_bench": {
+		"textures": {
+			"north": "fletching_bench_side1",
+			"south": "fletching_bench_side1",
+			"west": "fletching_bench_side2",
+			"east": "fletching_bench_side2",
+			"down": "hayblock_top",
+			"up": "fletching_bench_top"
+		},
+		"sound": "wood"
+	}
+}

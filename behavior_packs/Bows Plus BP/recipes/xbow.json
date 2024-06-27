@@ -1,0 +1,39 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "pan:xbow"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ABA",
+			"CDC",
+			" A "
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:netherite_ingot"
+			},
+			"B": {
+				"item": "minecraft:diamond_block"
+			},
+			"C": {
+				"item": "minecraft:string"
+			},
+			"D": {
+				"item": "minecraft:tripwire_hook"
+			}
+		},
+		"result": {
+			"item": "pan:xbow_empty",
+			"count": 1
+		},
+		"unlock": [
+			{
+				"item": "minecraft:string"
+			}
+		]
+	}
+}

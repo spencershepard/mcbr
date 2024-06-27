@@ -1,0 +1,68 @@
+{
+	"format_version": "1.18.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "pan:gravity_arrow_pull",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"pan:despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:physics": {
+				"has_collision": true,
+				"has_gravity": true
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:timer": {
+				"time": [
+					6,
+					6
+				],
+				"time_down_event": {
+					"event": "pan:despawn",
+					"target": "self"
+				}
+			},
+			"minecraft:environment_sensor": {
+				"triggers": {
+					"event": "pan:summon",
+					"target": "self"
+				}
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:conditional_bandwidth_optimization": {}
+		},
+		"events": {
+			"pan:despawn": {
+				"add": {
+					"component_groups": [
+						"pan:despawn"
+					]
+				}
+			},
+			"pan:summon": {
+				"run_command": {
+					"command": [
+						"effect @e[type=!pan:gravity_arrow,type=!pan:gravity_arrow_pull,r=3.5] levitation 1 4",
+						"particle pan:gravity_arrow ~ ~ ~"
+					]
+				}
+			}
+		}
+	}
+}

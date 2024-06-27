@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "dl:torch"
+    },
+
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "o",
+	  "l",
+	  "l"
+    ],
+    "key": {
+      "o": {
+        "item": "minecraft:torch"
+      },
+      "l": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "dl:torch"
+    }
+  }
+  
+}

@@ -1,0 +1,31 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "pan:dragon_arrow",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.arrow"
+			},
+			"minecraft:display_name": {
+				"value": "Dragon Arrow\n§710-12 Damage§f"
+			},
+			"minecraft:icon": {
+				"texture": "dragon_arrow"
+			},
+			"minecraft:allow_off_hand": true,
+			"minecraft:entity_placer": {
+				"entity": "pan:dragon_arrow",
+				"use_on": [
+					"minecraft:barrier"
+				],
+				"dispense_on": [
+					"minecraft:air"
+				]
+			}
+		},
+		"events": {}
+	}
+}

@@ -1,0 +1,20 @@
+execute at @e[scores={pan:ironarrow=1}] run title @s actionbar Flame Arrow Mode
+execute at @e[scores={pan:ironarrow=1}] run scoreboard players add @s pan:ironarrow 1
+execute at @e[scores={pan:ironarrow=3}] run title @s actionbar Crystal Arrow Mode
+execute at @e[scores={pan:ironarrow=3}] run scoreboard players add @s pan:ironarrow 1
+execute at @e[scores={pan:ironarrow=5}] run title @s actionbar Copper Arrow Mode
+execute at @e[scores={pan:ironarrow=5}] run scoreboard players add @s pan:ironarrow 1
+execute at @e[scores={pan:ironarrow=7}] run title @s actionbar Obsidian Arrow Mode
+execute at @e[scores={pan:ironarrow=7}] run scoreboard players add @s pan:ironarrow 1
+execute at @e[scores={pan:ironarrow=9}] run title @s actionbar Magma Arrow Mode
+execute at @e[scores={pan:ironarrow=9}] run scoreboard players add @s pan:ironarrow 1
+execute at @e[scores={pan:ironarrow=11}] run title @s actionbar Prismarine Arrow Mode
+execute at @e[scores={pan:ironarrow=11}] run scoreboard players add @s pan:ironarrow 1
+execute at @e[scores={pan:ironarrow=13}] run title @s actionbar Explosive Arrow Mode
+execute at @e[scores={pan:ironarrow=13}] run scoreboard players add @s pan:ironarrow 1
+execute at @e[scores={pan:ironarrow=15}] run title @s actionbar Gravity Arrow Mode
+execute at @e[scores={pan:ironarrow=15}] run scoreboard players add @s pan:ironarrow 1
+execute at @e[scores={pan:ironarrow=17}] run title @s actionbar Dragon Arrow Mode
+execute at @e[scores={pan:ironarrow=17}] run scoreboard players add @s pan:ironarrow 1
+execute at @e[scores={pan:ironarrow=19..999999}] run title @s actionbar Arrow Mode
+execute at @e[scores={pan:ironarrow=19..999999}] run scoreboard players set @s pan:ironarrow 0

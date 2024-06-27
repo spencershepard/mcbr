@@ -1,0 +1,48 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "pan:iron_crossbow_empty",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.equipment"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:use_duration": 0.1,
+			"minecraft:icon": {
+				"texture": "iron_crossbow_empty"
+			},
+			"minecraft:display_name": {
+				"value": "Iron Crossbow\n§7Lots of arrows§f"
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "pan:load",
+					"target": "self"
+				}
+			},
+			"minecraft:hand_equipped": true,
+			"minecraft:cooldown": {
+				"category": "iron_crossbow",
+				"duration": 6
+			},
+			"minecraft:use_animation": "crossbow",
+			"minecraft:allow_off_hand": true
+		},
+		"events": {
+			"pan:load": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"function iron_crossbow_reload"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

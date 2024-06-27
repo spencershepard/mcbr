@@ -1,0 +1,36 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "pan:party_bow"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" AC",
+			"ABC",
+			" AC"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:blaze_rod"
+			},
+			"B": {
+				"item": "minecraft:cake"
+			},
+			"C": {
+				"item": "minecraft:string"
+			}
+		},
+		"result": {
+			"item": "pan:party_bow",
+			"count": 1
+		},
+		"unlock": [
+			{
+				"item": "minecraft:string"
+			}
+		]
+	}
+}

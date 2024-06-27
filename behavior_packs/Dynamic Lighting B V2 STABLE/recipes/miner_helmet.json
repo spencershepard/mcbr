@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "dl:miner_helmet_recipe"
+    },
+
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "###",
+      "#P#"
+    ],
+    "key": {
+      "P": {
+        "item": "minecraft:torch"
+      },
+      "#": {
+        "item": "minecraft:iron_ingot",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "dl:miner_helmet",
+      "data": 0
+    }
+  }
+  
+}

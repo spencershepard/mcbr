@@ -1,0 +1,19 @@
+{
+	"num_mip_levels": 4,
+	"padding": 8,
+	"resource_pack_name": "Bows Plus",
+	"texture_data": {
+		"fletching_bench_side1": {
+			"textures": {
+				"path": "textures/blocks/fletching_bench_side1"
+			}
+		},
+		"fletching_bench_side2": {
+			"textures": "textures/blocks/fletching_bench_side2"
+		},
+		"fletching_bench_top": {
+			"textures": "textures/blocks/fletching_bench_top"
+		}
+	},
+	"texture_name": "atlas.terrain"
+}

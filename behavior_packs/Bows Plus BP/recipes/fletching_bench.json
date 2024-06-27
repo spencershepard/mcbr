@@ -1,0 +1,42 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "pan:fletching_bench"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" B ",
+			"CDA",
+			" E "
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:feather"
+			},
+			"B": {
+				"item": "minecraft:arrow"
+			},
+			"C": {
+				"item": "minecraft:string"
+			},
+			"D": {
+				"item": "minecraft:fletching_table"
+			},
+			"E": {
+				"item": "minecraft:hay_block"
+			}
+		},
+		"result": {
+			"item": "pan:fletching_bench",
+			"count": 1
+		},
+		"unlock": [
+			{
+				"item": "minecraft:fletching_table"
+			}
+		]
+	}
+}

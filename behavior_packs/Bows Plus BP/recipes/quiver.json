@@ -1,0 +1,38 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "pan:quiver"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"a": {
+				"item": "minecraft:leather"
+			},
+			"b": {
+				"item": "minecraft:feather"
+			},
+			"c": {
+				"item": "minecraft:string"
+			}
+		},
+		"pattern": [
+			"  b",
+			"ca ",
+			"a  "
+		],
+		"result": {
+			"item": "pan:quiver"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:string"
+			},
+			{
+				"item": "minecraft:leather"
+			}
+		]
+	}
+}

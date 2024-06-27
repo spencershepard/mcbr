@@ -1,0 +1,64 @@
+{
+ "format_version": 2,
+ "header": {
+   "description": "§b§lAuthor > §c§lHM §c§lEduardo",
+   "name": "§c§lDead §b§lCells §e§lBows V2",
+   "uuid":"3603c65e-1b3e-467b-a043-88847c63866e",
+   "version": [1, 1, 0],
+   "min_engine_version": [1, 14, 60]
+  },
+ "modules": [
+   {
+     "description": "§b§lAuthor > §c§lHM §c§lEduardo",
+     "type": "resources",
+     "uuid": "7f5414f9-c4b2-43ee-a1f4-fd37121bf4af",
+     "version": [1, 0, 0]
+   }
+ ],
+  "subpacks": [
+    {
+        "folder_name": "Multiple-nocks Bow",
+        "name": "Multiple-nocks Bow",
+        "memory_tier": 1
+    },
+    {
+        "folder_name": "Marksman's Bow",
+        "name": "Marksman's Bow",
+        "memory_tier": 1
+    },
+    {
+        "folder_name": "Infantry Bow",
+        "name": "Infantry Bow",
+        "memory_tier": 1
+    },
+    {
+        "folder_name":"Nerves of Steel",
+        "name": "Nerves of Steel",
+        "memory_tier": 1
+    },
+    {
+      "folder_name": "Bow and Endless Quiver",
+      "name": "Bow and Endless Quiver",
+      "memory_tier": 1
+    },
+    {
+      "folder_name": "Ice bow",
+      "name": "Ice bow",
+      "memory_tier": 1
+    },
+    {
+      "folder_name":"Quick bow",
+      "name": "Quick bow",
+      "memory_tier": 1
+    },
+    {
+      "folder_name":"Gilded Yumi",
+      "name": "Gilded Yumi",
+      "memory_tier": 1
+    }
+   
+   ],
+      "capabilities": [
+        "chemistry"
+    ]
+}

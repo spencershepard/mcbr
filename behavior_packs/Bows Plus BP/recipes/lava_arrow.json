@@ -1,0 +1,35 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "pan:lava_arrow"
+		},
+		"tags": [
+			"fletching_bench"
+		],
+		"pattern": [
+			"ABA",
+			"B B",
+			"ABA"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:lava_bucket"
+			},
+			"B": {
+				"item": "minecraft:arrow",
+				"data": 0
+			}
+		},
+		"result": [
+			{
+				"item": "pan:lava_arrow",
+				"count": 4
+			},
+			{
+				"item": "minecraft:bucket",
+				"count": 4
+			}
+		]
+	}
+}

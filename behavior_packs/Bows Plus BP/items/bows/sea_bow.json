@@ -1,0 +1,102 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "pan:sea_bow",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "sea_bow"
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "pan:shoot",
+					"target": "self",
+					"condition": "query.scoreboard('pan:arow_chek')==1"
+				}
+			},
+			"minecraft:display_name": {
+				"value": "§dSea Bow\n§7Homing arrows§f"
+			},
+			"minecraft:creative_category": {
+				"parent": "equipment"
+			},
+			"minecraft:cooldown": {
+				"category": "bow",
+				"duration": 1.5
+			},
+			"minecraft:hand_equipped": true,
+			"minecraft:max_stack_size": 1,
+			"minecraft:durability": {
+				"max_durability": 685
+			},
+			"minecraft:weapon": {
+				"on_hurt_entity": {
+					"event": "pan:durability",
+					"target": "self"
+				},
+				"on_not_hurt_entity": {
+					"event": "pan:durability",
+					"target": "self"
+				},
+				"on_hit_block": {
+					"event": "pan:durability",
+					"target": "self"
+				}
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"pan:sea_bow"
+						],
+						"repair_amount": 685
+					},
+					{
+						"items": [
+							"minecraft:diamond"
+						],
+						"repair_amount": 500
+					}
+				]
+			},
+			"minecraft:enchantable": {
+				"slot": "flintsteel",
+				"value": 10
+			}
+		},
+		"events": {
+			"pan:shoot": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"playsound random.bow @a[r=10] ~ ~ ~",
+								"playanimation @s animation.humanoid.bow_and_arrow p 0.5",
+								"clear @s[m=!c] arrow 0 1"
+							],
+							"target": "holder"
+						},
+						"shoot": {
+							"projectile": "pan:sea_arrow",
+							"launch_power": 1
+						},
+						"damage": {
+							"type": "durability",
+							"amount": 1,
+							"target": "self"
+						}
+					}
+				]
+			},
+			"pan:durability": {
+				"damage": {
+					"type": "durability",
+					"amount": 0,
+					"target": "self"
+				}
+			}
+		}
+	}
+}

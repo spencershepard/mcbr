@@ -1,0 +1,48 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "pan:sunbeam_empty",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.equipment"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:use_duration": 0.1,
+			"minecraft:icon": {
+				"texture": "sunbeam_empty"
+			},
+			"minecraft:display_name": {
+				"value": "§dSunbeam\n§7Explosive arrows§f"
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "pan:load",
+					"target": "self"
+				}
+			},
+			"minecraft:hand_equipped": true,
+			"minecraft:cooldown": {
+				"category": "sunbeam",
+				"duration": 7
+			},
+			"minecraft:use_animation": "crossbow",
+			"minecraft:allow_off_hand": true
+		},
+		"events": {
+			"pan:load": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"function sunbeam_reload"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

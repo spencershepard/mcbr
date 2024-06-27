@@ -1,0 +1,48 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "pan:gilded_bow_empty",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.equipment"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:use_duration": 0.1,
+			"minecraft:icon": {
+				"texture": "gilded_bow_empty"
+			},
+			"minecraft:display_name": {
+				"value": "Gilded Bow\n§7Far shooting§f"
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "pan:load",
+					"target": "self"
+				}
+			},
+			"minecraft:hand_equipped": true,
+			"minecraft:cooldown": {
+				"category": "gilded_bow",
+				"duration": 4
+			},
+			"minecraft:use_animation": "crossbow",
+			"minecraft:allow_off_hand": true
+		},
+		"events": {
+			"pan:load": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"function gilded_bow_reload"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

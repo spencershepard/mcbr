@@ -1,0 +1,31 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "pan:lava_arrow",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.arrow"
+			},
+			"minecraft:display_name": {
+				"value": "Lava Arrow\n§79-12 Damage§f\n§7Party Bow§f"
+			},
+			"minecraft:icon": {
+				"texture": "lava_arrow"
+			},
+			"minecraft:allow_off_hand": true,
+			"minecraft:entity_placer": {
+				"entity": "pan:lava_arrow",
+				"use_on": [
+					"minecraft:barrier"
+				],
+				"dispense_on": [
+					"minecraft:air"
+				]
+			}
+		},
+		"events": {}
+	}
+}

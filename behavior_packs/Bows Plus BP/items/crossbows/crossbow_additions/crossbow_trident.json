@@ -1,0 +1,49 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "pan:crossbow_trident",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.equipment"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:use_duration": 0.1,
+			"minecraft:icon": {
+				"texture": "crossbow_trident"
+			},
+			"minecraft:display_name": {
+				"value": "Crossbow\n§7Trident§f"
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "pan:shoot",
+					"target": "self"
+				}
+			},
+			"minecraft:hand_equipped": true,
+			"minecraft:use_animation": "crossbow"
+		},
+		"events": {
+			"pan:shoot": {
+				"sequence": [
+					{
+						"shoot": {
+							"projectile": "minecraft:thrown_trident",
+							"launch_power": 2
+						},
+						"run_command": {
+							"command": [
+								"playanimation @s animation.player.crossbow_hold p 1",
+								"playsound crossbow.shoot @a[r=10] ~ ~ ~",
+								"replaceitem entity @s[m=!c] slot.weapon.mainhand 0 crossbow"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

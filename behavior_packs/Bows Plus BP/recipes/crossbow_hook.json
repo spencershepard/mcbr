@@ -1,0 +1,36 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "pan:crossbow_hook"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"A A",
+			"CBC",
+			"A A"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:iron_block"
+			},
+			"B": {
+				"item": "minecraft:crossbow"
+			},
+			"C": {
+				"item": "minecraft:lead"
+			}
+		},
+		"result": {
+			"item": "pan:crossbow_hook",
+			"count": 1
+		},
+		"unlock": [
+			{
+				"item": "minecraft:crossbow"
+			}
+		]
+	}
+}

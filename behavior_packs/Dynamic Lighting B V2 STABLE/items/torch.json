@@ -1,0 +1,25 @@
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "dl:torch",
+	  "category": "Equipment"
+    },
+
+    "components": {
+		"minecraft:wearable": {
+			"slot": "slot.weapon.offhand"
+		},
+		"minecraft:icon":{
+			"texture": "o_torch"
+		},
+		"minecraft:block_placer": {
+			"block": "minecraft:torch"
+		},
+		"minecraft:display_name":{
+			"value": "Off Hand Torch"
+		},
+		"minecraft:allow_off_hand": true	
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "pan:sea_bow"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" AC",
+			"ABC",
+			" AC"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:diamond"
+			},
+			"B": {
+				"item": "minecraft:heart_of_the_sea"
+			},
+			"C": {
+				"item": "minecraft:string"
+			}
+		},
+		"result": {
+			"item": "pan:sea_bow",
+			"count": 1
+		},
+		"unlock": [
+			{
+				"item": "minecraft:string"
+			}
+		]
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "pan:explosive_arrow"
+		},
+		"tags": [
+			"fletching_bench"
+		],
+		"key": {
+			"a": {
+				"item": "minecraft:arrow",
+				"data": 0
+			},
+			"b": {
+				"item": "minecraft:gunpowder"
+			}
+		},
+		"pattern": [
+			"aaa",
+			"aba",
+			"aaa"
+		],
+		"result": {
+			"item": "pan:explosive_arrow",
+			"count": 8
+		}
+	}
+}

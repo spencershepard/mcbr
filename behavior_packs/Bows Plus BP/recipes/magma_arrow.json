@@ -1,0 +1,29 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "pan:magma_arrow"
+		},
+		"tags": [
+			"fletching_bench"
+		],
+		"key": {
+			"a": {
+				"item": "minecraft:arrow",
+				"data": 0
+			},
+			"b": {
+				"item": "minecraft:magma_cream"
+			}
+		},
+		"pattern": [
+			"aaa",
+			"aba",
+			"aaa"
+		],
+		"result": {
+			"item": "pan:magma_arrow",
+			"count": 8
+		}
+	}
+}

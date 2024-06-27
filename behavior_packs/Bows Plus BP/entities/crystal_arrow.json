@@ -1,0 +1,103 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "pan:crystal_arrow",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:arrow"
+		},
+		"component_groups": {
+			"pan:despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.25,
+				"height": 0.25
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"impact_damage": {
+						"damage": [
+							8,
+							11
+						],
+						"knockback": true,
+						"semi_random_diff_damage": true,
+						"destroy_on_hit": false,
+						"max_critical_damage": 10,
+						"min_critical_damage": 9,
+						"power_multiplier": 0.97
+					},
+					"stick_in_ground": {
+						"shake_time": 0.35
+					},
+					"arrow_effect": {},
+					"definition_event": {
+						"event_trigger": {
+							"event": "pan:hit",
+							"target": "self"
+						}
+					}
+				},
+				"hit_sound": "bow.hit",
+				"power": 5,
+				"gravity": 0.05,
+				"uncertainty_base": 1,
+				"uncertainty_multiplier": 0,
+				"anchor": 1,
+				"should_bounce": true,
+				"offset": [
+					0,
+					-0.1,
+					0
+				]
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:conditional_bandwidth_optimization": {
+				"default_values": {
+					"max_optimized_distance": 80,
+					"max_dropped_ticks": 7,
+					"use_motion_prediction_hints": true
+				}
+			}
+		},
+		"events": {
+			"pan:hit": {
+				"run_command": {
+					"command": [
+						"damage @e[type=!item,type=!xp_orb,type=!pan:crystal_arrow,r=3] 8 projectile entity @p",
+						"playsound break.large_amethyst_bud @a[r=25] ~ ~ ~",
+						"particle pan:crystal_arrow ~ ~ ~"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"pan:despawn"
+					]
+				}
+			}
+		}
+	}
+}

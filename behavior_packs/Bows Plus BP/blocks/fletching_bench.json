@@ -1,0 +1,31 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "pan:fletching_bench",
+			"register_to_creative_menu": true
+		},
+		"components": {
+			"minecraft:crafting_table": {
+				"grid_size": 3,
+				"custom_description": "Fletching Bench",
+				"crafting_tags": [
+					"fletching_bench"
+				]
+			},
+			"minecraft:map_color": "#FFFFFF",
+			"minecraft:flammable": {
+				"destroy_chance_modifier": 0,
+				"catch_chance_modifier": 0
+			},
+			"minecraft:block_light_filter": 1,
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1
+			},
+			"minecraft:creative_category": {
+				"group": "items",
+				"category": "items"
+			}
+		}
+	}
+}

@@ -1,0 +1,98 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "pan:xbow_prismarine_arrow",
+			"category": "commands"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.equipment"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:use_duration": 0.1,
+			"minecraft:icon": {
+				"texture": "xbow_prismarine_arrow"
+			},
+			"minecraft:display_name": {
+				"value": "§bXbow\n§7Prismarine Arrow§f"
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "pan:shoot",
+					"target": "self"
+				}
+			},
+			"minecraft:hand_equipped": true,
+			"minecraft:cooldown": {
+				"category": "xbow",
+				"duration": 0.1
+			},
+			"minecraft:durability": {
+				"max_durability": 8
+			},
+			"minecraft:weapon": {
+				"on_hurt_entity": {
+					"event": "pan:durability",
+					"target": "self"
+				},
+				"on_not_hurt_entity": {
+					"event": "pan:durability",
+					"target": "self"
+				},
+				"on_hit_block": {
+					"event": "pan:durability",
+					"target": "self"
+				}
+			},
+			"minecraft:use_animation": "crossbow",
+			"minecraft:allow_off_hand": true
+		},
+		"events": {
+			"pan:shoot": {
+				"sequence": [
+					{
+						"condition": "query.remaining_durability>=2",
+						"run_command": {
+							"command": [
+								"playsound crossbow.shoot @a[r=10] ~ ~ ~",
+								"playanimation @s animation.player.crossbow_hold p 0.75"
+							]
+						},
+						"shoot": {
+							"projectile": "pan:prismarine_arrow",
+							"launch_power": 1
+						},
+						"damage": {
+							"type": "durability",
+							"amount": 1,
+							"target": "self"
+						}
+					},
+					{
+						"condition": "query.remaining_durability<=1",
+						"shoot": {
+							"projectile": "pan:prismarine_arrow",
+							"launch_power": 1
+						},
+						"run_command": {
+							"command": [
+								"playsound crossbow.shoot @a[r=10] ~ ~ ~",
+								"playanimation @s animation.player.crossbow_hold p 0.75",
+								"playsound crossbow.loading.end @a[r=10] ~ ~ ~",
+								"replaceitem entity @s slot.weapon.mainhand 0 pan:xbow_empty"
+							]
+						}
+					}
+				]
+			},
+			"pan:durability": {
+				"damage": {
+					"type": "durability",
+					"amount": 0,
+					"target": "self"
+				}
+			}
+		}
+	}
+}

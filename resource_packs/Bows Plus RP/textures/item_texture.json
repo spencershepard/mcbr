@@ -1,0 +1,281 @@
+{
+	"resource_pack_name": "bridgeRP",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"flame_arrow": {
+			"textures": "textures/items/arrows/flame_arrow"
+		},
+		"crossbow_pearl": {
+			"textures": [
+				"textures/items/crossbows/crossbow_pearl"
+			]
+		},
+		"xbow_empty": {
+			"textures": [
+				"textures/items/crossbows/xbow"
+			]
+		},
+		"xbow_arrow": {
+			"textures": [
+				"textures/items/crossbows/xbow_arrow"
+			]
+		},
+		"xbow_flame_arrow": {
+			"textures": [
+				"textures/items/crossbows/xbow_flame_arrow"
+			]
+		},
+		"crossbow_trident": {
+			"textures": [
+				"textures/items/crossbows/crossbow_trident"
+			]
+		},
+		"crystal_arrow": {
+			"textures": [
+				"textures/items/arrows/crystal_arrow"
+			]
+		},
+		"xbow_crystal_arrow": {
+			"textures": [
+				"textures/items/crossbows/xbow_crystal_arrow"
+			]
+		},
+		"copper_arrow": {
+			"textures": [
+				"textures/items/arrows/copper_arrow"
+			]
+		},
+		"xbow_copper_arrow": {
+			"textures": [
+				"textures/items/crossbows/xbow_copper_arrow"
+			]
+		},
+		"obsidian_arrow": {
+			"textures": [
+				"textures/items/arrows/obsidian_arrow"
+			]
+		},
+		"xbow_obsidian_arrow": {
+			"textures": [
+				"textures/items/crossbows/xbow_obsidian_arrow"
+			]
+		},
+		"magma_arrow": {
+			"textures": [
+				"textures/items/arrows/magma_arrow"
+			]
+		},
+		"xbow_magma_arrow": {
+			"textures": [
+				"textures/items/crossbows/xbow_magma_arrow"
+			]
+		},
+		"crossbow_mini_empty": {
+			"textures": "textures/items/crossbows/crossbow_mini"
+		},
+		"crossbow_mini_arrow": {
+			"textures": "textures/items/crossbows/crossbow_mini_arrow"
+		},
+		"prismarine_arrow": {
+			"textures": "textures/items/arrows/prismarine_arrow"
+		},
+		"explosive_arrow": {
+			"textures": "textures/items/arrows/explosive_arrow"
+		},
+		"xbow_explosive_arrow": {
+			"textures": "textures/items/crossbows/xbow_explosive_arrow"
+		},
+		"xbow_prismarine_arrow": {
+			"textures": "textures/items/crossbows/xbow_prismarine_arrow"
+		},
+		"xbow_gravity_arrow": {
+			"textures": "textures/items/crossbows/xbow_gravity_arrow"
+		},
+		"gravity_arrow": {
+			"textures": "textures/items/arrows/gravity_arrow"
+		},
+		"xbow_dragon_arrow": {
+			"textures": "textures/items/crossbows/xbow_dragon_arrow"
+		},
+		"dragon_arrow": {
+			"textures": "textures/items/arrows/dragon_arrow"
+		},
+		"crossbow_hook": {
+			"textures": "textures/items/crossbows/crossbow_hook"
+		},
+		"crossbow_fireball": {
+			"textures": "textures/items/crossbows/crossbow_fireball"
+		},
+		"crossbow_wither_skull": {
+			"textures": "textures/items/crossbows/crossbow_wither_skull"
+		},
+		"lava_arrow": {
+			"textures": "textures/items/arrows/lava_arrow"
+		},
+		"water_arrow": {
+			"textures": "textures/items/arrows/water_arrow"
+		},
+		"snow_arrow": {
+			"textures": "textures/items/arrows/snow_arrow"
+		},
+		"crossbow_mini_flame_arrow": {
+			"textures": "textures/items/crossbows/crossbow_mini_flame_arrow"
+		},
+		"crossbow_mini_copper_arrow": {
+			"textures": "textures/items/crossbows/crossbow_mini_copper_arrow"
+		},
+		"crossbow_mini_crystal_arrow": {
+			"textures": "textures/items/crossbows/crossbow_mini_crystal_arrow"
+		},
+		"crossbow_mini_dragon_arrow": {
+			"textures": "textures/items/crossbows/crossbow_mini_dragon_arrow"
+		},
+		"crossbow_mini_explosive_arrow": {
+			"textures": "textures/items/crossbows/crossbow_mini_explosive_arrow"
+		},
+		"crossbow_mini_gravity_arrow": {
+			"textures": "textures/items/crossbows/crossbow_mini_gravity_arrow"
+		},
+		"crossbow_mini_magma_arrow": {
+			"textures": "textures/items/crossbows/crossbow_mini_magma_arrow"
+		},
+		"crossbow_mini_obsidian_arrow": {
+			"textures": "textures/items/crossbows/crossbow_mini_obsidian_arrow"
+		},
+		"crossbow_mini_prismarine_arrow": {
+			"textures": "textures/items/crossbows/crossbow_mini_prismarine_arrow"
+		},
+		"sunbeam_empty": {
+			"textures": "textures/items/crossbows/sunbeam"
+		},
+		"frostbite_empty": {
+			"textures": "textures/items/crossbows/frostbite"
+		},
+		"gilded_bow_empty": {
+			"textures": "textures/items/crossbows/gilded_crossbow"
+		},
+		"bone_bow_empty": {
+			"textures": "textures/items/crossbows/bone_bow"
+		},
+		"iron_crossbow_empty": {
+			"textures": "textures/items/crossbows/iron_crossbow"
+		},
+		"sunbeam_charged": {
+			"textures": "textures/items/crossbows/sunbeam_charged"
+		},
+		"frostbite_charged": {
+			"textures": "textures/items/crossbows/frostbite_charged"
+		},
+		"bone_bow_arrow": {
+			"textures": "textures/items/crossbows/bone_bow_arrow"
+		},
+		"bone_bow_flame_arrow": {
+			"textures": "textures/items/crossbows/bone_bow_flame_arrow"
+		},
+		"bone_bow_copper_arrow": {
+			"textures": "textures/items/crossbows/bone_bow_copper_arrow"
+		},
+		"bone_bow_crystal_arrow": {
+			"textures": "textures/items/crossbows/bone_bow_crystal_arrow"
+		},
+		"bone_bow_dragon_arrow": {
+			"textures": "textures/items/crossbows/bone_bow_dragon_arrow"
+		},
+		"bone_bow_explosive_arrow": {
+			"textures": "textures/items/crossbows/bone_bow_explosive_arrow"
+		},
+		"bone_bow_gravity_arrow": {
+			"textures": "textures/items/crossbows/bone_bow_gravity_arrow"
+		},
+		"bone_bow_magma_arrow": {
+			"textures": "textures/items/crossbows/bone_bow_magma_arrow"
+		},
+		"bone_bow_obsidian_arrow": {
+			"textures": "textures/items/crossbows/bone_bow_obsidian_arrow"
+		},
+		"bone_bow_prismarine_arrow": {
+			"textures": "textures/items/crossbows/bone_bow_prismarine_arrow"
+		},
+		"gilded_bow_arrow": {
+			"textures": "textures/items/crossbows/gilded_crossbow_arrow"
+		},
+		"gilded_bow_flame_arrow": {
+			"textures": "textures/items/crossbows/gilded_crossbow_flame_arrow"
+		},
+		"gilded_bow_copper_arrow": {
+			"textures": "textures/items/crossbows/gilded_crossbow_copper_arrow"
+		},
+		"gilded_bow_crystal_arrow": {
+			"textures": "textures/items/crossbows/gilded_crossbow_crystal_arrow"
+		},
+		"gilded_bow_dragon_arrow": {
+			"textures": "textures/items/crossbows/gilded_crossbow_dragon_arrow"
+		},
+		"gilded_bow_explosive_arrow": {
+			"textures": "textures/items/crossbows/gilded_crossbow_explosive_arrow"
+		},
+		"gilded_bow_gravity_arrow": {
+			"textures": "textures/items/crossbows/gilded_crossbow_gravity_arrow"
+		},
+		"gilded_bow_magma_arrow": {
+			"textures": "textures/items/crossbows/gilded_crossbow_magma_arrow"
+		},
+		"gilded_bow_obsidian_arrow": {
+			"textures": "textures/items/crossbows/gilded_crossbow_obsidian_arrow"
+		},
+		"gilded_bow_prismarine_arrow": {
+			"textures": "textures/items/crossbows/gilded_crossbow_prismarine_arrow"
+		},
+		"wind_bow": {
+			"textures": "textures/items/wind_bow"
+		},
+		"sticky_bow": {
+			"textures": "textures/items/sticky_bow"
+		},
+		"power_bow": {
+			"textures": "textures/items/power_bow"
+		},
+		"bamboo_bow": {
+			"textures": "textures/items/bamboo_bow"
+		},
+		"party_bow": {
+			"textures": "textures/items/party_bow"
+		},
+		"sea_bow": {
+			"textures": "textures/items/sea_bow"
+		},
+		"star_bow": {
+			"textures": "textures/items/star_bow"
+		},
+		"iron_crossbow_arrow": {
+			"textures": "textures/items/crossbows/iron_crossbow_arrow"
+		},
+		"iron_crossbow_flame_arrow": {
+			"textures": "textures/items/crossbows/iron_crossbow_flame_arrow"
+		},
+		"iron_crossbow_copper_arrow": {
+			"textures": "textures/items/crossbows/iron_crossbow_copper_arrow"
+		},
+		"iron_crossbow_crystal_arrow": {
+			"textures": "textures/items/crossbows/iron_crossbow_crystal_arrow"
+		},
+		"iron_crossbow_dragon_arrow": {
+			"textures": "textures/items/crossbows/iron_crossbow_dragon_arrow"
+		},
+		"iron_crossbow_explosive_arrow": {
+			"textures": "textures/items/crossbows/iron_crossbow_explosive_arrow"
+		},
+		"iron_crossbow_gravity_arrow": {
+			"textures": "textures/items/crossbows/iron_crossbow_gravity_arrow"
+		},
+		"iron_crossbow_magma_arrow": {
+			"textures": "textures/items/crossbows/iron_crossbow_magma_arrow"
+		},
+		"iron_crossbow_obsidian_arrow": {
+			"textures": "textures/items/crossbows/iron_crossbow_obsidian_arrow"
+		},
+		"iron_crossbow_prismarine_arrow": {
+			"textures": "textures/items/crossbows/iron_crossbow_prismarine_arrow"
+		}
+	}
+}
